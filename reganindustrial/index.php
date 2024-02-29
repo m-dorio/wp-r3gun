@@ -37,29 +37,29 @@
 							<div class="services">
 								<h2>Services</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit, ac aliquet odio mattis.</p>
-								<div class="cta-button-reverse">
-									<a class="cta" href="http://localhost/regan/about-us/">view more</a>
+								<div class="cta-button">
+									<a class="view_more cta" href="h<?php echo get_home_url(); ?>/about-us/">view more</a>
 								</div>
 							</div>
 							<div class="variety_and_choices">
 								<h2>Variety & Choices</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit, ac aliquet odio mattis.</p>
-								<div class="cta-button-reverse">
-								<a class="cta" href="http://localhost/regan/about-us/">view more</a>
+								<div class="cta-button">
+								<a class="view_more cta" href="h<?php echo get_home_url(); ?>/about-us/">view more</a>
 								</div>
 							</div>
 							<div class="regan_offers">
 								<h2>Regan Offers Convenience</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero velit, ac aliquet odio mattis.</p>
-								<div class="cta-button-reverse">
-								<a class="cta" href="http://localhost/regan/about-us/">view more</a>
+								<div class="cta-button">
+								<a class="view_more cta" href="h<?php echo get_home_url(); ?>/about-us/">view more</a>
 								</div>
 							</div>
 							<div class="regan_anticipates">
 								<h2>Regan Anticipates Innovative Solutions</h2>
 								<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-								<div class="cta-button-reverse">
-								<a class="cta" href="http://localhost/regan/about-us/">view more</a>
+								<div class="cta-button">
+								<a class="view_more cta" href="h<?php echo get_home_url(); ?>/about-us/">view more</a>
 								</div>
 							</div>
 						</div>
@@ -150,7 +150,7 @@
 								</div>
 									<h3>Manila</h3>
 									<p>#5 Harmony St., Grace Village, Brgy. Balingasa, Balintawak, Quezon City</p>
-								<div class="cta-button">
+								<div class="view_more-reverse cta-button">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/phone.png" alt="" class=" mb-0">
 								<a class="cta" href="<?php echo get_home_url(); ?>#">(+632) 8771-8900</a>
 								</div>
@@ -166,8 +166,8 @@
 								</div>
 									<h3>Cebu</h3>
 									<p>Mandaue City 6014, Cebu, Philippines</p>
-								<div class="cta-button">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/phone.png" alt="" class=" mb-0">
+								<div class="view_more-reverse cta-button">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/phone.png" alt="" class="mb-0">
 								<a class="cta" href="<?php echo get_home_url(); ?>#">(+6332) 383-3545</a>
 								</div>
 							</div>
@@ -182,10 +182,10 @@
 								</div>
 								<h3>Davao</h3>
 									<p>Damosa, Davao City</p>
-								<div class="cta-button">
+								<div class="view_more-reverse cta-button">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/phone.png" alt="" class=" mb-0"><a class="cta" href="<?php echo get_home_url(); ?>#">(+6382) 224-4290</a>
 								</div>
-								<div class="cta-button">
+								<div class="view_more-reverse cta-button">
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/phone.png" alt="" class=" mb-0"><a class="cta" href="<?php echo get_home_url(); ?>#">(+6382) 225-0566</a>
 								</div>
 							</div>
@@ -214,7 +214,7 @@
 						<div class="card">
 							<h2>About Us</h2>
 							<p>Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-							<div class="cta-button">
+							<div class="view_more-reverse cta-button">
 								<a class="cta" href="<?php echo get_home_url(); ?>/about-us/">Learn More</a>
 							</div>
 						</div>
@@ -229,206 +229,214 @@
 <section class="blog">
     <div class="container-fluid">
         <div class="wrapper">
-            <div class="row">
-                <div class="header">
-                    <h2 class="text-center text-uppercase">articles</h2>
-                </div>
-                <div class="articles">
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                            <a href="" target="_blank" rel="noopener noreferrer">
-                                <div class="content">
-                                    <div class="article-image">
-                                        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog1.jpg" alt="" class="feature-img">
-                                    </div>
-									<div class="inner-content">
-										<p class="date">February 16, 2024</p>
-										<h3>Corem ipsum Lore dolor sit amet adipiscing</h3>
-										<p class="description">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
-										<button class="read-more">read more <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></button>
+			<div class="header">
+				<h2 class="text-center text-uppercase">Blogs</h2>
+			</div>
+
+			<div class="blog-posts">
+				<div class="main-blog">
+					<div class="row _custom">
+						<div class="col-xxl-3 col-xl-6 col-md-6 col-sm-12">
+							<div class="card">
+								<div class="">
+									<div class="">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog1.jpg" alt="" class="feature-img">
+										<div class="card-body">
+											<p class="card-text"><small class="text-muted">February 16, 2024</small></p>
+											<h3 class="card-title truncate-lines-2">Corem ipsum Lore dolor sit amet adipiscing</h3>
+											<p class="card-text">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+										</div>
+										<div class="card-body-btn">
+											<a href="#" class="read-more">read more<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></a>
+										</div>
 									</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                            <a href="" target="_blank" rel="noopener noreferrer">
-                                <div class="content">
-                                    <div class="article-image">
-                                        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog2.jpg" alt="" class="feature-img">
-                                    </div>
-									<div class="inner-content">
-                                    <p class="date">February 16, 2024</p>
-                                    <h3>Corem ipsum Lore dolor sit amet </h3>
-                                    <p class="description">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
-                                    <button class="read-more">read more <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xxl-3 col-xl-6 col-md-6 col-sm-12">
+							<div class="card">
+								<div class="">
+									<div class="">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog2.jpg" alt="" class="feature-img">
+										<div class="card-body">
+											<p class="card-text"><small class="text-muted">February 16, 2024</small></p>
+											<h3 class="card-title truncate-lines-2">Corem ipsum Lore dolor sit amet</h3>
+											<p class="card-text">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+										</div>
+										<div class="card-body-btn">
+											<a href="#" class="read-more">read more<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></a>
+										</div>
 									</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="aside-blogs">
-                                <a href="" target="_blank" rel="noopener noreferrer">
-                                    <div class="content d-flex">
-                                        <div class="image-container">
-                                            <div class="article-image">
-                                                <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog3.jpg" alt="" class="feature-img">
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <p class="date">February 16, 2024</p>
-                                            <h3>Corem ipsum Lore dolor sit amet adipiscing</h3>
-                                            <p class="description">Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio...</p>
-                                            <button class="read-more">read more <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></button>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="" target="_blank" rel="noopener noreferrer">
-                                    <div class="content d-flex">
-                                        <div class="image-container">
-                                            <div class="article-image">
-                                                <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog4.jpg" alt="" class="feature-img">
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <p class="date">February 16, 2024</p>
-                                            <h3>Corem ipsum Lore dolor sit amet adipiscing</h3>
-                                            <p class="description">Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio...</p>
-                                            <button class="read-more">read more <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></button>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-			<div class="row">
-				<div class="col-12">
-					<div class="ctabtn">
-						<div class="cta-button">
-							<a class="cta" href="../regan/about-us/">Learn More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xxl-6 col-xl-12 col-md-12 col-sm-12">
+							<div class="aside-blog">
+								<div class="card">
+									<div class="row no-gutters">
+										<div class="col-md-4 col-sm-12">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog3.jpg" alt="" class="feature-img">
+										</div>
+										<div class="col-md-8 col-sm-12">
+										<div class="card-body">
+											<p class="card-text"><small class="text-muted">February 16, 2024</small></p>
+											<h3 class="card-title truncate-lines-2">Corem ipsum Lore dolor sit amet adipiscing</h3>
+											<p class="card-text truncate-lines-2">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+											
+											<a href="#" class="read-more">read more<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></a>
+										</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="row no-gutters">
+										<div class="col-md-4 col-sm-12">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog4.jpg" alt="" class="feature-img">
+										</div>
+										<div class="col-md-8 col-sm-12">
+										<div class="card-body">
+											<p class="card-text"><small class="text-muted">February 16, 2024</small></p>
+											<h3 class="card-title truncate-lines-2">Corem ipsum Lore dolor sit amet adipiscing</h3>
+											<p class="card-text truncate-lines-2">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+											<a href="#" class="read-more">read more<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
+				</div>	
 			</div>
+		</div>
+	
+		<div class="auto-center">
+			<div class="view_more-reverse cta-button">
+				<a class="cta" href="<?php echo get_home_url(); ?>/about-us/">View More</a>
+			</div>
+		</div>
+
         </div>
     </div>
 </section>
 
-
-
-<!-- <section class="section_6">
-	<div class="container-fluid">
-		<div class="wrapper">
-			<div class="row">
-				<div class="col">
-					<div class="header">
-						<h2>Blogs</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row x_gap">
-				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-					<div class="main-content">
-						<div class="content">
-							<div class="blog-image">
-								<img src="http://localhost/regan/wp-content/themes/reganindustrial/assets/images/section6-blog1.jpg" alt="">
-							</div>
-							<div class="inner-content">
-								<div>
-									<p class="date">February 6, 2024</p>
-									<h3>Corem ipsum Lore dolor sit amet adipiscing</h3>
-									<p class="description">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
-								</div>
-								<button class="read-more">read more	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png"
-							alt=""></button>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-					<div class="main-content">
-						<div class="content">
-							<div class="blog-image">
-								<img src="http://localhost/regan/wp-content/themes/reganindustrial/assets/images/section6-blog2.jpg" alt="">
-							</div>
-							<div class="inner-content">
-								<div>
-									<p class="date">February 6, 2024</p>
-									<h3>Corem ipsum Lore dolor sit amet </h3>
-									<p class="description">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
-								</div>
-								<button class="read-more">read more	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png"
-							alt=""></button>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xl-6">
-					<div class="aside-content">
-						<div class="content">
-							<div class="image-container">
-								<div class="blog-image">
-									<img src="http://localhost/regan/wp-content/themes/reganindustrial/assets/images/section6-blog3.jpg" alt="">
-								</div>
-							</div>
-							<div class="inner-content">
-								<p class="date">February 6, 2024</p>
-								<h3>Corem ipsum Lore dolor sit amet adipiscing</h3>
-								<p class="description">Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio...</p>
-								<button class="read-more">read more	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png"
-						alt=""></button>
-							</div>
-						</div>
-						<div class="content">
-							<div class="image-container">
-								<div class="article-image">
-									<img src="http://localhost/regan/wp-content/themes/reganindustrial/assets/images/section6-blog4.jpg" alt="">
-								</div>
-							</div>
-							<div class="inner-content">
-								<p class="date">February 6, 2024</p>
-								<h3>Corem ipsum Lore dolor sit amet adipiscing</h3>
-								<p class="description">Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio...</p>
-								<button class="read-more">read more	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png"
-						alt=""></button>
-							</div>
-						</div>
-					</div>
-				</div>
-
+<!-- <section class="blog">
+    <div class="container-fluid">
+        <div class="wrapper">
+			<div class="header">
+				<h2 class="text-center text-uppercase">Blogs</h2>
 			</div>
 
-			<div class="row">
-				<div class="col">
-					<div class="cta-button m-auto">
-						<a class="cta" href="<?php echo get_home_url(); ?>/">View more</a>
+			<div class="blog-posts">
+				<div class="main-blog">
+					<div class="card" style="width: 362px;">
+						<div class="row no-gutters">
+							<div class="col-md-12">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog1.jpg" alt="" class="feature-img">
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">February 16, 2024</small></p>
+									<h3 class="card-title truncate-lines-2">Corem ipsum Lore dolor sit amet adipiscing</h3>
+									<p class="card-text">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+								</div>
+								<div class="card-body-btn">
+									<a href="#" class="read-more">read more<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+							
+					<div class="card" style="width: 362px;">
+						<div class="row no-gutters">
+							<div class="col-md-12">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog2.jpg" alt="" class="feature-img">
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">February 16, 2024</small></p>
+									<h3 class="card-title truncate-lines-2">Corem ipsum Lore dolor sit amet</h3>
+									<p class="card-text">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+								</div>
+								<div class="card-body-btn">
+									<a href="#" class="read-more">read more<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
 
+				<div class="aside-blog">
+
+					<div class="card" style="max-width: 750px;">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog3.jpg" alt="" class="feature-img">
+							</div>
+							<div class="col-md-8">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">February 16, 2024</small></p>
+								<h3 class="card-title truncate-lines-2">Corem ipsum Lore dolor sit amet adipiscing</h3>
+								<p class="card-text truncate-lines-2">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+								
+								<a href="#" class="read-more">read more<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></a>
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card" style="max-width: 750px;">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog4.jpg" alt="" class="feature-img">
+							</div>
+							<div class="col-md-8">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">February 16, 2024</small></p>
+								<h3 class="card-title truncate-lines-2">Corem ipsum Lore dolor sit amet adipiscing</h3>
+								<p class="card-text truncate-lines-2">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+								<a href="#" class="read-more">read more<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></a>
+							</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</div>
-	</div>
-</section> -->
+	
+		<div class="auto-center">
+			<div class="view_more-reverse cta-button">
+				<a class="cta" href="<?php echo get_home_url(); ?>/about-us/">View More</a>
+			</div>
+		</div>
 
+        </div>
+    </div>
+</section> -->
 
 <section class="section_7">
 	<div class="container-fluid">
 		<div class="wrapper">
-			<div class="row _reverse">
+			<div class="row _custom">
 				<div class="col-lg-6 col-md-12 col-sm-12">
-					<div class="content">
-						<div class="card">
-							<h2>We are Steel and More</h2>
-							<p>Regan Industrial Sales, Inc. (RISI) was established on January 1968 at Dagupan St. in Tondo Manila. Back then there were only 10 employees selling valves, wire  rope devices, and other structural steel products. Incorporated in 1980, Regan Industrial Sales Inc. moved to its new location at #5 Harmony St. Grace Village, Quezon City.</p>
-							<p>Over the years, Regan Industrial Sales Incorporated has been supplying various steel plates, sections, pipes and tubing, bars and rods across a multi-sectoral market in the country.</p>
-							<div class="cta-button">
+					<div class="card">
+						<div class="card-body _custom">
+							<h2 class="card-title">We are Steel and More</h2>
+							<p class="card-text">Regan Industrial Sales, Inc. (RISI) was established on January 1968 at Dagupan St. in Tondo Manila. Back then there were only 10 employees selling valves, wire  rope devices, and other structural steel products. Incorporated in 1980, Regan Industrial Sales Inc. moved to its new location at #5 Harmony St. Grace Village, Quezon City.</p>
+							<p class="card-text">Over the years, Regan Industrial Sales Incorporated has been supplying various steel plates, sections, pipes and tubing, bars and rods across a multi-sectoral market in the country.</p>
+							<div class="view_more-reverse cta-button">
 								<a class="cta" href="<?php echo get_home_url(); ?>/inquire-now/">Inquire now</a>
 							</div>
 						</div>
 					</div>
+
+					<!-- <div class="content">
+						<div class="card">
+							<h2>We are Steel and More</h2>
+							<p>Regan Industrial Sales, Inc. (RISI) was established on January 1968 at Dagupan St. in Tondo Manila. Back then there were only 10 employees selling valves, wire  rope devices, and other structural steel products. Incorporated in 1980, Regan Industrial Sales Inc. moved to its new location at #5 Harmony St. Grace Village, Quezon City.</p>
+							<p>Over the years, Regan Industrial Sales Incorporated has been supplying various steel plates, sections, pipes and tubing, bars and rods across a multi-sectoral market in the country.</p>
+							<div class="view_more-reverse cta-button">
+								<a class="cta" href="<?php echo get_home_url(); ?>/inquire-now/">Inquire now</a>
+							</div>
+						</div>
+					</div> -->
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12">
 					<div class="content-img"></div>

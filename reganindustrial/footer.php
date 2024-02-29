@@ -103,7 +103,7 @@
                    </div>
                 </div>
 
-                <div class="col-xl-3 col-md-4 col-sm-6 info">
+                <div class="col-xl-2 col-md-4 col-sm-6 info">
                     <div class="content">
                         <h5>Davao</h5>
                     </div>
@@ -121,7 +121,7 @@
                    </div>
                 </div>
 
-                <div class="col-xl-3 col-md-4 col-sm-12 info">
+                <div class="col-xl-4 col-md-4 col-sm-12 info">
                     <div class="content">
                         <h5>Newsletter</h5>
                         <p class="newsletter">Get our news and updates</p>

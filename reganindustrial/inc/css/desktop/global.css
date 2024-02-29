@@ -7,6 +7,20 @@
     position: sticky;
 }
 
+.truncate-lines-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.truncate-lines-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
 .top_bar {
     padding: 16px 0;
     background: #A1102B;
@@ -55,7 +69,7 @@
     height: 50px;
     
     color: #797979;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -114,15 +128,6 @@
     max-width: 150px;
 }
 
-.top_bar ._cta input:first-of-type {
-    z-index: 2;
-    position: relative;
-}
-
-.top_bar ._cta input:first-of-type:hover {
-    opacity: 0;
-}
-
 .tablet-logo{
     display: none;
 }
@@ -146,7 +151,7 @@ nav.navbar.navbar-expand-lg{
 
 #menu-regannavmenu li.menu-item a{
     color: #CC3627;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -159,7 +164,7 @@ nav.navbar.navbar-expand-lg{
 
 section h1{
     color: #004783;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 44px;
     font-style: normal;
     font-weight: 800;
@@ -169,7 +174,7 @@ section h1{
 }
 section h2{
     color: #004783;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 800;
@@ -178,7 +183,7 @@ section h2{
 }
 section h3{
     color: #000;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 30px !important;
     font-style: normal;
     font-weight: 800;
@@ -187,7 +192,7 @@ section h3{
 }
 section h4{
     color: #000;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -195,7 +200,7 @@ section h4{
 }
 section p,section li{
     color: #000;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 200;
@@ -235,47 +240,38 @@ section .submit{
 
 }
 
-section .read-more-btn{
-    color: #000;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-decoration: none;
-}
-section .cta{
-    color: #FFF;
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-section .cta-button{
+section .view_more {
+    background: #FFF;
+    display: flex;
     padding: 10px 35px;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-    border-radius: 0;
+}
+
+section .view_more-reverse {
     background: #F21840;
-    width: max-content;
-}
-section .cta-button-reverse{
+    display: flex;
     padding: 10px 35px;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-    border-radius: 0;
-    background: #fff;
-    width: max-content;
+    width: 100%;
 }
-section .cta-button-reverse .cta{
-    color: #F21840;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+
+
+section .cta {
+    border: none;
+    border-radius: 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+section .auto-center div{
+    width: 100%;
+    display: block;
+    margin: 50px auto auto !important;
 }
 
 section{
@@ -301,7 +297,7 @@ a.btn{
     display: flex;
     background: #008BFF;
     text-align: center;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #FFF;
@@ -316,9 +312,6 @@ a.btn:hover{
     background-color: #FFF;
     transition: ease 0.5s;
 }
-
-
-
 
 
 footer {
@@ -526,7 +519,7 @@ footer .socialmedia{
 
 footer ._input input::placeholder{
     color: #797979;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 300;

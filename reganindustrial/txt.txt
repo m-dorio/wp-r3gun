@@ -1,0 +1,256 @@
+<section class="blog">
+    <div class="container-fluid">
+        <div class="wrapper">
+            <div class="row">
+                <div class="header">
+                    <h2 class="text-center text-uppercase">Blogs</h2>
+                </div>
+                <div class="articles">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+							<div class="card">
+								
+									<div class="content">
+										<div class="article-image">
+											<img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog1.jpg" alt="" class="feature-img">
+										</div>
+										<div class="inner-content">
+											<p class="date">February 16, 2024</p>
+											<h3>Corem ipsum Lore dolor sit amet adipiscing</h3>
+											<p class="description">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+											<!-- <button class="read-more stretched-link">read more <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></button> -->
+										</div>
+									</div>
+								
+							</div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+							<div class="card">
+                           
+                                <div class="content">
+                                    <div class="article-image">
+                                        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog2.jpg" alt="" class="feature-img">
+                                    </div>
+									<div class="inner-content">
+                                    <p class="date">February 16, 2024</p>
+                                    <h3>Corem ipsum Lore dolor sit amet </h3>
+                                    <p class="description">Borem ipsum dolor sit amet, adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+                                    <!-- <button class="read-more stretched-link">read more <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></button> -->
+									</div>
+                                </div>
+                            
+							</div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="aside-blogs">
+								<div class="card">
+                              
+                                    <div class="content d-flex">
+                                        <div class="image-container">
+                                            <div class="article-image">
+                                                <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog3.jpg" alt="" class="feature-img">
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <p class="date">February 16, 2024</p>
+                                            <h3>Corem ipsum Lore dolor sit amet adipiscing</h3>
+                                            <p class="description">Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio...</p>
+                                            <!-- <button class="read-more stretched-link">read more <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></button> -->
+                                        </div>
+                                    </div>
+                               
+								</div>
+								<div class="card">
+                               
+                                    <div class="content d-flex">
+                                        <div class="image-container">
+                                            <div class="article-image">
+                                                <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/section6-blog4.jpg" alt="" class="feature-img">
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <p class="date">February 16, 2024</p>
+                                            <h3>Corem ipsum Lore dolor sit amet adipiscing</h3>
+                                            <p class="description">Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio...</p>
+                                            <!-- <button class="read-more stretched-link">read more <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png" alt=""></button> -->
+                                        </div>
+                                    </div>
+                             
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="row">
+				<div class="col-12">
+					<div class="auto-center">
+						<div class="view_more-reverse cta-button">
+							<a class="cta" href="<?php echo get_home_url(); ?>/about-us/">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION 6 */
+/* section.blog {
+} */
+
+section.blog .aside-blogs .content.d-flex .content{
+    padding: 30px 25px;
+}
+
+section.blog .inner-content{
+    padding: 30px 25px;
+}
+
+section.blog h2 {
+    margin-bottom: 50px;
+    color: #A1102B;
+}
+
+section.blog img.feature-img {
+    border-radius: 0;
+}
+
+section.blog .row>:not(:last-child) .content {
+    max-width: 360px;
+}
+
+section.blog .view_more-reverse.cta-button{
+    max-width: 200px;
+    width: 100%;
+}
+
+section.blog .cta-button a{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+section.blog .row>:last-child .image-container {
+    max-width: 250px;
+    width: 40%;
+}
+section.blog p.description{
+    text-transform: capitalize !important;
+}
+section.blog .row>:last-child .image-container img {
+    margin-bottom: 0;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 287px;
+    min-width: 249px;
+}
+
+section.blog a{
+    text-decoration: none !important;
+}
+section.blog .content h3{
+    color: #A1102B;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+section.blog .row>:last-child .content .content {
+    width: 100%;
+}
+
+section.blog .row>:not(:last-child) img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    /* margin-bottom: 30px; */
+}
+
+section.blog .row>:not(:last-child) img:hover,
+section.blog .row>:last-child .image-container img:hover {
+    transition: .5s ease-in;
+    transform: scale(1.1);
+}
+
+section.blog .article-image {
+    overflow: hidden;
+    border-radius: 0;
+}
+
+section.blog .articles>.row {
+    gap: 24px 0;
+}
+
+section.blog .articles .card {
+    background: #F5F5F5;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+section.blog button.read-more {
+    color: #F21840;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    width: 106px;
+    white-space: pre;
+    padding: 0;
+}
+
+/* section.blog button.read-more:hover {
+    transition: .2s ease-in;
+    color: #8000FF;
+    gap: 0 15px;
+} */
+
+section.blog button.read-more img {
+    /* height: 16px;
+    width: 8px; */
+    object-fit: contain;
+    margin-bottom: 0 !important;
+}
+
+section.blog p.date {
+    font-size: 15px;
+}
+
+section.blog .aside-blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
